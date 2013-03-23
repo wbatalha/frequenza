@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>324</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Editar Aluno</string>
+  </property>
+  <property name="locale">
+   <locale language="Portuguese" country="Brazil"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Cartão:</string>
+       </property>
+       <property name="buddy">
+        <cstring>cartaoLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="cartaoLineEdit">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <property name="accessibleDescription">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Ler Cartão</string>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cartaoPushButton">
+       <property name="text">
+        <string>Ler Cartão</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../icons.qrc">
+         <normaloff>:/icons/rfid-icon_2.png</normaloff>:/icons/rfid-icon_2.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Matrícula:</string>
+       </property>
+       <property name="buddy">
+        <cstring>matriculaLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="matriculaLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Nome:</string>
+       </property>
+       <property name="buddy">
+        <cstring>nomeLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nomeLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="salvarPushButton">
+     <property name="text">
+      <string>Salvar</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../icons.qrc">
+       <normaloff>:/icons/floppy_2_48.png</normaloff>:/icons/floppy_2_48.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>nomeLineEdit</tabstop>
+  <tabstop>matriculaLineEdit</tabstop>
+  <tabstop>cartaoLineEdit</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>cartaoPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>get_rfid_card()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>242</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>salvarPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>salvar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>161</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>salvar()</slot>
+  <slot>get_rfid_card()</slot>
+ </slots>
+</ui>

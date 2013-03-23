@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="/">
+    <file>icons/icon.png</file>
+    <file>icons/floppy_2_48.png</file>
+    <file>icons/edit_48.png</file>
+    <file>icons/left_32.png</file>
+    <file>icons/right_32.png</file>
+    <file>icons/notebook_boy_48.png</file>
+    <file>icons/user_group_48.png</file>
+    <file>icons/lessons_48.png</file>
+    <file>icons/rfid-icon_2.png</file>
+    <file>icons/education_48.png</file>
+    <file>icons/delete_48.png</file>
+  </qresource>
+</RCC>
