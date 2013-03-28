@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//interfaces/alunoEditorUi.py=utf-8
+encoding//interfaces/turmaDialogUi.py=utf-8
+encoding//interfaces/windowUi.py=utf-8
+encoding/aluno_editor.py=utf-8
+encoding/arduino_dialog.py=utf-8
+encoding/aula_dialog.py=utf-8
+encoding/cartao_dialog.py=utf-8
+encoding/chamada_dialog.py=utf-8
+encoding/main.py=utf-8
+encoding/models.py=utf-8
+encoding/turma_dialog.py=utf-8
