@@ -1,4 +1,4 @@
-frequenza
+Frequenza - Uma Ferramenta para o Auxílio da Verificação de Frequência
 =========
 Neste repositório encontra-se o código-fonte da ferramenta Frequenza.
 Maiores Informações sobre a ferramenta:
